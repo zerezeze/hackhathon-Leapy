@@ -23,6 +23,11 @@ export const Header: React.FC<HeaderProps> = ({ setIsOpenMobile }) => {
           title: 'Minha Jornada',
           subtitle: 'Sua trilha de desenvolvimento e conquistas na empresa.',
         };
+      case 'project':
+        return {
+          title: 'Meu Projeto',
+          subtitle: 'Acompanhe as etapas do seu projeto prático no quadro Kanban.',
+        };
       case 'feedback':
         return {
           title: 'Feedbacks',

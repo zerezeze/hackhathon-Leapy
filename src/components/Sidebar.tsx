@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useApp } from '@/context/AppContext';
-import { LayoutDashboard, Compass, MessageSquare, LineChart, LogOut } from 'lucide-react';
+import { LayoutDashboard, Compass, MessageSquare, LineChart, LogOut, Kanban } from 'lucide-react';
 
 interface SidebarProps {
   isOpenMobile: boolean;
@@ -15,6 +15,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpenMobile, setIsOpenMobile 
   const menuItems = [
     { id: 'overview', label: 'Visão Geral', icon: LayoutDashboard },
     { id: 'journey', label: 'Minha Jornada', icon: Compass },
+    { id: 'project', label: 'Meu Projeto', icon: Kanban },
     { id: 'feedback', label: 'Feedbacks', icon: MessageSquare },
     { id: 'development', label: 'Meu Desenvolvimento', icon: LineChart },
   ];
@@ -34,8 +35,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpenMobile, setIsOpenMobile 
             <Compass className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h1 className="font-bold text-slate-800 text-lg leading-tight">Leapy</h1>
-            <p className="text-xs font-semibold text-violet-600 tracking-wider uppercase">Compass</p>
+            <h1 className="font-bold text-slate-800 text-lg leading-tight">Impulso</h1>
+            <p className="text-[10px] font-bold text-violet-600 tracking-wider uppercase">Programa</p>
           </div>
         </div>
 
@@ -94,8 +95,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpenMobile, setIsOpenMobile 
               <Compass className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="font-bold text-slate-800 text-lg">Leapy</h1>
-              <p className="text-xs font-semibold text-violet-600 tracking-wider uppercase">Compass</p>
+              <h1 className="font-bold text-slate-800 text-lg">Impulso</h1>
+              <p className="text-[10px] font-bold text-violet-600 tracking-wider uppercase">Programa</p>
             </div>
           </div>
           <button

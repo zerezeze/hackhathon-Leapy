@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leapy Compass - Jornada do Aprendiz",
+  title: "Impulso - Jornada do Aprendiz",
   description: "Plataforma de onboarding e desenvolvimento para jovens aprendizes.",
 };
 

@@ -8,6 +8,7 @@ import { OverviewTab } from '@/components/OverviewTab';
 import { JourneyTab } from '@/components/JourneyTab';
 import { FeedbackTab } from '@/components/FeedbackTab';
 import { DevelopmentTab } from '@/components/DevelopmentTab';
+import { ProjectTab } from '@/components/ProjectTab';
 
 function MainLayout() {
   const { activeTab } = useApp();
@@ -19,6 +20,8 @@ function MainLayout() {
         return <OverviewTab />;
       case 'journey':
         return <JourneyTab />;
+      case 'project':
+        return <ProjectTab />;
       case 'feedback':
         return <FeedbackTab />;
       case 'development':
